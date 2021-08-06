@@ -24,7 +24,16 @@ public class KeyEvents extends Applet implements KeyListener
         showStatus("Key Typed");
         repaint();
     }
- 
+     public void keyUp(KeyEvent k)
+    {
+        showStatus("Key UP");
+        repaint();
+    }
+    public void keyDown(KeyEvent k)
+    {
+        showStatus("Key Down");
+        repaint();
+
     public void keyPressed(KeyEvent k)
     {
         showStatus("Key Pressed");
